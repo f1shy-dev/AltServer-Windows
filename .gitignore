@@ -27,3 +27,4 @@ Generated\ Files/
 
 # macOS
 .DS_Store
+vcpkg_installed/
