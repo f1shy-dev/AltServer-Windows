@@ -72,15 +72,21 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg">
     <VcpkgEnableManifest>true</VcpkgEnableManifest>
@@ -99,7 +105,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>Ws2_32.lib;dnssd.lib;plist.lib;regex.lib;ldid.lib;corecrypto.lib;WinSparkle.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files\Bonjour SDK\Lib\Win32;C:\Users\User\Documents\vcpkg\packages\cpprestsdk_x86-windows\lib;$(SolutionDir)AltSign\Dependencies\regex\lib;$(SolutionDir)$(Configuration)\;$(SolutionDir)Dependencies\Libraries;$(SolutionDir)AltSign\Dependencies\corecrypto;$(SolutionDir)Dependencies\WinSparkle\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files\Bonjour SDK\Lib\Win32;C:\Users\User\Documents\vcpkg\packages\cpprestsdk_x86-windows\lib;$(SolutionDir)AltSign\Dependencies\regex\lib;$(SolutionDir)$(Configuration)\;$(SolutionDir)Dependencies\Libraries;$(SolutionDir)AltSign\Dependencies\corecrypto;$(SolutionDir)Dependencies\WinSparkle\Release;$(SolutionDir)Dependencies\regex;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Manifest>
       <EnableDpiAwareness>true</EnableDpiAwareness>
@@ -119,7 +125,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>Ws2_32.lib;dnssd.lib;plist.lib;regex.lib;ldid.lib;corecrypto.lib;WinSparkle.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files\Bonjour SDK\Lib\Win32;C:\Users\User\Documents\vcpkg\packages\cpprestsdk_x86-windows\lib;$(SolutionDir)AltSign\Dependencies\regex\lib;$(SolutionDir)$(Configuration)\;$(SolutionDir)Dependencies\Libraries;$(SolutionDir)AltSign\Dependencies\corecrypto;$(SolutionDir)Dependencies\WinSparkle\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files\Bonjour SDK\Lib\Win32;C:\Users\User\Documents\vcpkg\packages\cpprestsdk_x86-windows\lib;$(SolutionDir)AltSign\Dependencies\regex\lib;$(SolutionDir)$(Configuration)\;$(SolutionDir)Dependencies\Libraries;$(SolutionDir)AltSign\Dependencies\corecrypto;$(SolutionDir)Dependencies\WinSparkle\Release;$(SolutionDir)Dependencies\regex;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Manifest>
       <EnableDpiAwareness>true</EnableDpiAwareness>
@@ -142,7 +148,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files\Bonjour SDK\Lib\Win32;C:\Users\User\Documents\vcpkg\packages\cpprestsdk_x86-windows\lib;$(SolutionDir)AltSign\Dependencies\regex\lib;$(SolutionDir)$(Configuration)\;$(SolutionDir)Dependencies\Libraries;$(SolutionDir)AltSign\Dependencies\corecrypto;$(SolutionDir)Dependencies\WinSparkle\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files\Bonjour SDK\Lib\Win32;C:\Users\User\Documents\vcpkg\packages\cpprestsdk_x86-windows\lib;$(SolutionDir)AltSign\Dependencies\regex\lib;$(SolutionDir)$(Configuration)\;$(SolutionDir)Dependencies\Libraries;$(SolutionDir)AltSign\Dependencies\corecrypto;$(SolutionDir)Dependencies\WinSparkle\Release;$(SolutionDir)Dependencies\regex;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>Ws2_32.lib;dnssd.lib;plist.lib;regex.lib;ldid.lib;corecrypto.lib;WinSparkle.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
@@ -166,7 +172,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files\Bonjour SDK\Lib\Win32;C:\Users\User\Documents\vcpkg\packages\cpprestsdk_x86-windows\lib;$(SolutionDir)AltSign\Dependencies\regex\lib;$(SolutionDir)$(Configuration)\;$(SolutionDir)Dependencies\Libraries;$(SolutionDir)AltSign\Dependencies\corecrypto;$(SolutionDir)Dependencies\WinSparkle\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files\Bonjour SDK\Lib\Win32;C:\Users\User\Documents\vcpkg\packages\cpprestsdk_x86-windows\lib;$(SolutionDir)AltSign\Dependencies\regex\lib;$(SolutionDir)$(Configuration)\;$(SolutionDir)Dependencies\Libraries;$(SolutionDir)AltSign\Dependencies\corecrypto;$(SolutionDir)Dependencies\WinSparkle\Release;$(SolutionDir)Dependencies\regex;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>Ws2_32.lib;dnssd.lib;plist.lib;regex.lib;ldid.lib;corecrypto.lib;WinSparkle.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -210,11 +216,6 @@
     <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Pictures\AltServerIcon Icons\ICO files\AltServerIcon_win7.ico" />
-    <Image Include="..\..\menubaricon_dark.ico" />
-    <Image Include="..\Resources\Icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\AltSign\AltSign.vcxproj">
       <Project>{3dd5ea43-d078-46fe-b5c2-bb6213f936cd}</Project>
     </ProjectReference>
@@ -230,6 +231,9 @@
     <ProjectReference Include="..\ldid\ldid.vcxproj">
       <Project>{147d42db-4b88-4b3f-8548-6e11fb51c589}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
