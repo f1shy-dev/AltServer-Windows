@@ -12,8 +12,10 @@ In order to compile AltServer on VS 2019 there a few things required. If you are
     - Open the project properties page
     - Navigate to `Configuration Properties > vcpkg`
     - Turn on `Use Vcpkg Manifest`
-8. Fix the path for the icons in the RC file.
-9. Copy all binaries in a single folder, including the Apple.pem file
 
-The code should now compile, download the certificate, sign and install.
-TODO: fix the installer project by placing the files in the proper folder.
+The code should now compile, but only in x86 for now.
+
+### To Do
+
+- [ ] Fix x64 build??
+- [ ] Fix encoding bug (fetchaccount fails on first request decoding the gzip response)
