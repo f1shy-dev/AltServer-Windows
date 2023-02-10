@@ -381,6 +381,7 @@ AltServerApp::AltServerApp() : _appGroupSemaphore(1)
 		//TODO: Better error handling?
 		assert(false);
 	}
+	// CLSIDFromString(L"{96A5974D-D3A2-909A-B6BD-4FF84E7880F7}", &_notificationIconGUID);
 }
 
 AltServerApp::~AltServerApp()
