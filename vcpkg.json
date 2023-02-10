@@ -3,10 +3,17 @@
   "name": "altserver-windows",
   "version": "0.15.2",
   "dependencies": [
-    "cpprestsdk",
+    {
+      "name": "cpprestsdk",
+      "features": [
+        "default-features",
+        "websockets"
+      ]
+    },
     "dirent",
     "mdnsresponder",
-    "openssl"
+    "openssl",
+    "winsparkle"
   ],
   "overrides": [
     {
