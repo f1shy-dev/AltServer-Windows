@@ -400,3 +400,5 @@ FodyWeavers.xsd
 # macOS
 .DS_Store
 vcpkg_installed/
+
+Dependencies/libimobiledevice-vs/
