@@ -40,7 +40,7 @@
 
 #include "resource.h"
 
-#include <winsparkle.h>
+#include <winsparkle/winsparkle.h>
 
 #define odslog(msg) { std::stringstream ss; ss << msg << std::endl; OutputDebugStringA(ss.str().c_str()); }
 
