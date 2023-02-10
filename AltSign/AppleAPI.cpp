@@ -23,8 +23,7 @@ extern "C" {
 
 #include "AppleAPI.hpp"
 
-#include <cpprest/http_compression.h>
-
+#include <openssl/evp.h>
 #include <openssl/pem.h>
 #include <openssl/pkcs12.h>
 
