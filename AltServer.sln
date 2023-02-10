@@ -8,10 +8,20 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "plist", "Dependencies\libimobiledevice-vs\libplist.vcxproj", "{75352A45-BCB8-4774-8C66-3AF9EA6B6B42}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usbmuxd", "Dependencies\libimobiledevice-vs\libusbmuxd.vcxproj", "{527AE686-CD0E-4BC2-9B0F-4BC4CF9621E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75352A45-BCB8-4774-8C66-3AF9EA6B6B42} = {75352A45-BCB8-4774-8C66-3AF9EA6B6B42}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imobiledevice", "Dependencies\libimobiledevice-vs\imobiledevice.vcxproj", "{EE16E7F2-AC27-4E30-AB22-B02A9C2380B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75352A45-BCB8-4774-8C66-3AF9EA6B6B42} = {75352A45-BCB8-4774-8C66-3AF9EA6B6B42}
+		{527AE686-CD0E-4BC2-9B0F-4BC4CF9621E0} = {527AE686-CD0E-4BC2-9B0F-4BC4CF9621E0}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AltSign", "AltSign\AltSign.vcxproj", "{3DD5EA43-D078-46FE-B5C2-BB6213F936CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{147D42DB-4B88-4B3F-8548-6E11FB51C589} = {147D42DB-4B88-4B3F-8548-6E11FB51C589}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ldid", "ldid\ldid.vcxproj", "{147D42DB-4B88-4B3F-8548-6E11FB51C589}"
 EndProject
